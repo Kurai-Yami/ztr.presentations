@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: url("images/Задник\ 1.png") no-repeat center center fixed;
+    background-size: cover;
+}
+html {
+    margin: 0;
+    height: 100%;
+}
+main {
+    flex: 1;
+    
+}
+.navbar {
+    padding: 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+}
+.navbar img {
+    height: auto;
+    width: 100px; /* высота логотипа */
+}
+.nav {
+    display: flex;
+    justify-content: right;
+    background-color: #000000;
+}
+.nav a {
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.nav a:hover {
+    background-color: #ddd;
+    color: rgb(0, 0, 0);
+}
+.header {
+    position: fixed;
+}
+.content {
+    margin: 0;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background */
+    background-image: url(images/zad\ 1.png);
+    background-size: cover;
+    background-position: center;
+}
+.text{
+    text-align: center;
+
+}
+.text>h1 {
+    color:#ffffff;
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 30px;    /* Размеры кнопки */
+    background: linear-gradient(to right, #5994d8, #07b43d);
+    color: white;          /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */            
+    font-size: 18px;       /* Размер текста */
+    border-radius: 5px;    /* Закругленные углы */
+    transition: 0.3s;     /* Плавные анимации */
+}
+.btn:hover {
+    background: linear-gradient(to right, #5994d8, #07b43d);   /* Цвет при наведении */
+    transform: scale(1.05); /* Чуть увеличиваем */
+}
+.sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/zad\ 2.png);
+    background-position: center;
+    background-size: cover;
+}
+.se {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 100%;
+}
+.sl>img {
+    max-height: 600px;
+}
+.sl, .sp {
+    flex: 1;
+    min-width: 300px;
+}
+
+.features {
+    padding: 60px 20px;
+    background-color: #000000;
+    text-align: center;
+}
+
+
+/* Плашки с преимуществами */
+.feature-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.feature {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    padding: 30px;
+    background: rgb(25, 25, 25);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.722);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+.feature h2 {
+    color: #d6d6d6;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.feature p {
+    color: #c7c7c7;
+    line-height: 1.6;
+}
+
+
+.contact-section {
+    padding: 80px 20px;
+    background-image: url(images/zad\ 2.png);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.qr-container {
+    position: relative;
+    padding: 4px;
+    background: rgb(192, 192, 192);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.722);
+}
+
+.qr-code {
+    width: 300px;
+    display: block;
+}
+
+.qr-hint {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.telegram-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #0088cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.telegram-btn:hover {
+    background: #006699;
+}
+
+.niz {
+    text-align: center;
+    padding: 10px 0;
+    background: #000000;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .feature {
+        min-width: 100%;
+    }
+    
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
