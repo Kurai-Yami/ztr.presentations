@@ -43,9 +43,46 @@
         </div>
         <div class="contact-section">
             <div class="contact-container">
+                <div class="form-container">
+                <h3>Заполните форму заявки</h3>
+                <form id="presentation-form" action="https://formsubmit.co/tim.2ak@yandex.ru" method="POST">
+                    <!-- Конфигурация FormSubmit -->
+                    <input type="hidden" name="_subject" value="Новая заявка с сайта ZTR">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="https://your-site.netlify.app/thanks.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Ваш email</label>
+                        <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="project_type">Тип проекта</label>
+                        <select id="project_type" name="project_type" required>
+                            <option value="" disabled selected>Выберите тип проекта</option>
+                            <option value="Бизнес-презентация">Бизнес-презентация</option>
+                            <option value="Образовательный материал">Образовательный материал</option>
+                            <option value="Портфолио">Портфолио</option>
+                            <option value="Другое">Другое</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Опишите ваши требования</label>
+                        <textarea id="message" name="message" placeholder="Расскажите о вашем проекте..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn" style="width: 100%">Отправить заявку</button>
+                </form>
+            </div>
                 <div class="qr-container">
                     <img src="images/QR.png" alt="QR-код" class="qr-code">
-                    <div class="qr-hint">Наведите камеру</div>
                 </div>
                 <div class="contact-info">
                     <h2>Свяжитесь с нами</h2>
